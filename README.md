@@ -13,14 +13,15 @@ https://api.instagram.com/v1/users/{user-id}/media/recent/?access_token=ACCESS-T
 
 En la Segunda pantalla observamos el segundo fragment, con la Foto de perfil de la cuenta base y sus fotos subidas con likes, aquí se utilizarón los siguientes endpoints:
 https://api.instagram.com/v1/users/{user-id}/media/recent/?access_token=ACCESS-TOKEN
-
 [![Pantalla 1](https://github.com/jmdra/PetagramWebServiceInstagram/blob/master/petagramws2.png)](#Pantalla)
 
-En la Tercer Imagen vemos el Toolbar con las Opciones de Contacto que nos lleva a enviar un correo y Acerca de con biografia del Desarrollador y a Cambiar la Cuenta para mostrar el Perfil, este dato se guarda en una shared preferecnes y se utiliza el siguiente endpoint para volver a obtener los datos de la cuenta guarda recientemente
-
+En la Tercer Imagen vemos el Toolbar con las Opciones de Contacto que nos lleva a enviar un correo y Acerca de con biografia del Desarrollador y a Cambiar la Cuenta para mostrar el Perfil.
 [![Pantalla 1](https://github.com/jmdra/PetagramWebServiceInstagram/blob/master/petagramws3.png)](#Pantalla)
 
+La cuenta que ingreses se guarda en una shared preferences y se utiliza el siguiente endpoint para volver a obtener los datos de la cuenta guardada recientemente
+https://api.instagram.com/v1/users/{user-id}/media/recent/?access_token=ACCESS-TOKEN
 [![Pantalla 1](https://github.com/jmdra/PetagramWebServiceInstagram/blob/master/petagramws4.png)](#Pantalla)
+[![Pantalla 1](https://github.com/jmdra/PetagramWebServiceInstagram/blob/master/petagramws5.png)](#Pantalla)
 
 
 
