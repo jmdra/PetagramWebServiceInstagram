@@ -1,26 +1,27 @@
-# PetagramMenuFragment
-Tarea de Menu y Fragments en Petagram, de la Semana 4 del Curso 3
+# Petagram Web Service
+Tarea de Web Services entre Instagram y Petagram, de la Semana 1 del Curso 4.
+Para ver la Demostración en Youtube de la App: https://www.youtube.com/watch?v=xUfRwdXxUeE
 
-En la Primer Pantalla se observan los Tab con fragments cada uno de ellos.
-[![Pantalla 1](https://github.com/jmdra/PetagramMenuFragment/blob/master/MenuFragments1.png)](#Pantalla)
+En la Primer Pantalla se observa el primer fragment con el Timeline, aqui se utilizaron los siguiente endpoints:
 
-En la Segunda pantalla observamos el segundo fragment, con el Recyclerview pedido y la foto de perfil
+Para Obtener los usuarios que se estan siguiendo y se guardan en un arreglo
+https://api.instagram.com/v1/users/self/follows?access_token=ACCESS-TOKEN
 
-[![Pantalla 1](https://github.com/jmdra/PetagramMenuFragment/blob/master/MenuFragments2.png)](#Pantalla)
+Para Obtener la Recent Media de los usuarios que se guardaron en el arreglo
+https://api.instagram.com/v1/users/{user-id}/media/recent/?access_token=ACCESS-TOKEN
+[![Pantalla 1](https://github.com/jmdra/PetagramWebServiceInstagram/blob/master/petagramws1.png)](#Pantalla)
 
-En la Tercer Imagen vemos el Toolbar con las Opciones de Contacto que nos lleva a enviar un correo y Acerca de con biografia del Desarrollador
+En la Segunda pantalla observamos el segundo fragment, con la Foto de perfil de la cuenta base y sus fotos subidas con likes, aquí se utilizarón los siguientes endpoints:
+https://api.instagram.com/v1/users/{user-id}/media/recent/?access_token=ACCESS-TOKEN
 
-[![Pantalla 1](https://github.com/jmdra/PetagramMenuFragment/blob/master/MenuFragments3.png)](#Pantalla)
+[![Pantalla 1](https://github.com/jmdra/PetagramWebServiceInstagram/blob/master/petagramws2.png)](#Pantalla)
 
-En la Cuarta Pantalla Vemos el Formulario para Enviar el Correo Electronico con los comentarios, si introduces bien tu email te llegara una cc a tu email
+En la Tercer Imagen vemos el Toolbar con las Opciones de Contacto que nos lleva a enviar un correo y Acerca de con biografia del Desarrollador y a Cambiar la Cuenta para mostrar el Perfil, este dato se guarda en una shared preferecnes y se utiliza el siguiente endpoint para volver a obtener los datos de la cuenta guarda recientemente
 
-[![Pantalla 1](https://github.com/jmdra/PetagramMenuFragment/blob/master/MenuFragments4.png)](#Pantalla)
+[![Pantalla 1](https://github.com/jmdra/PetagramWebServiceInstagram/blob/master/petagramws3.png)](#Pantalla)
 
-En la Quinta Imagen Vemos el Acerca de del Desarrollador
-[![Pantalla 1](https://github.com/jmdra/PetagramMenuFragment/blob/master/MenuFragments5.png)](#Pantalla)
+[![Pantalla 1](https://github.com/jmdra/PetagramWebServiceInstagram/blob/master/petagramws4.png)](#Pantalla)
 
-Todos los Activity tienen el Menu del Toolbar
-[![Pantalla 1](https://github.com/jmdra/PetagramMenuFragment/blob/master/MenuFragments6.png)](#Pantalla)
 
 
 
